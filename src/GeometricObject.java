@@ -1,5 +1,7 @@
+import String.String;
+
 public abstract class GeometricObject {
-    private String color = "white";
+    private java.lang.String color = "white";
     private boolean filled;
     private java.util.Date dateCreated;
 
@@ -9,16 +11,16 @@ public abstract class GeometricObject {
 
     protected GeometricObject(String color, boolean filled) {
         dateCreated = new java.util.Date();
-        this.color = color;
+        this.color = java.lang.String.valueOf(color);
         this.filled = filled;
     }
 
-    public String getColor() {
+    public java.lang.String getColor() {
         return color;
     }
 
     public void setColor(String color) {
-        this.color = color;
+        this.color = java.lang.String.valueOf(color);
     }
 
     public boolean isFilled() {
@@ -34,7 +36,7 @@ public abstract class GeometricObject {
     }
 
     @Override
-    public String toString() {
+    public java.lang.String toString() {
         return "created on " + dateCreated + "\ncolor: " + color +
                 " and filled: " + filled;
     }

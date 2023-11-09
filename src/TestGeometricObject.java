@@ -11,7 +11,6 @@ public class TestGeometricObject {
                                     GeometricObject object2) {
         return object1.getArea() == object2.getArea();
     }
-
     public static void displayGeometricObject(GeometricObject object) {
         System.out.println();
         System.out.println("The area is " + object.getArea());
