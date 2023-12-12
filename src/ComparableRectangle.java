@@ -3,6 +3,7 @@ public class ComparableRectangle extends Rectangle
     public ComparableRectangle(double width, double height) {
         super(width, height);
     }
+    
 
     @Override
     public int compareTo(ComparableRectangle o) {
