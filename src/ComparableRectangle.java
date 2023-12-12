@@ -4,7 +4,6 @@ public class ComparableRectangle extends Rectangle
         super(width, height);
     }
     
-
     @Override
     public int compareTo(ComparableRectangle o) {
         if (getArea() > o.getArea())
